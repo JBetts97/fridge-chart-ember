@@ -1,7 +1,6 @@
 # fridgechart
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This ember application charts fridge usage data. It requires that the fridge chart API to be running. See prerequisities.
 
 ## Prerequisites
 
@@ -11,6 +10,7 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
+* [Fridge Chart API](https://github.com/JBetts97/fridge-chart-api)
 
 ## Installation
 
@@ -21,31 +21,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+* Visit the chart app at [http://localhost:4200/chart](http://localhost:4200/chart).
 
 ## Further Reading / Useful Links
 
