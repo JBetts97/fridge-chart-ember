@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Dashboard</h1>
+    {{#bs-button class="btn btn-info" onClick=(action "toggleDatePicker")}}
+        Date Picker
+    {{/bs-button}}
+    {{#bs-collapse collapsed=collapsed}}
+        <div id="datepick" class="calendar-medium">
+            {{#power-calendar
+                center=center
+                onCenterChange=(action (mut center) value="date")
+                selected=selected
+                onSelect=(action "selectDate" value="moment") as |calendar|}}
+                {{calendar.nav}}
+                {{calendar.days disabledDates=disabledDates}}
+            {{/power-calendar}}
+        </div>
+    {{/bs-collapse}}
+
+    {{sample-chart model=model}}
+</div>
+{{outlet}}
