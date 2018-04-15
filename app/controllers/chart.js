@@ -23,6 +23,12 @@ export default Controller.extend({
         selectDate(moment) {
             this.set('collapsed', true);
             this.transitionToRoute('chart', { queryParams: { date: moment.format().substring(0,10) }});
+        },
+        disableUnusedDays(moment) {
+            this.set('center', moment);
+            console.log(moment);
+            var usedDays = this.get('store').findAll('day');
+            console.log(usedDays);
         }
     }
 });
