@@ -7,7 +7,7 @@
         <div id="datepick" class="calendar-medium">
             {{#power-calendar
                 center=center
-                onCenterChange=(action (mut center) value="date")
+                onCenterChange=(action "disableUnusedDays" value="date")
                 selected=selected
                 onSelect=(action "selectDate" value="moment") as |calendar|}}
                 {{calendar.nav}}
