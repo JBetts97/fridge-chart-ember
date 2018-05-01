@@ -2,6 +2,8 @@ import Controller from '@ember/controller';
 import moment from 'moment';
 
 export default Controller.extend({
+    queryParams: ['date', 'type'],
+    type: 'door',
     init: function() {
         this._super();
         this.set('collapsed', true);
@@ -22,7 +24,9 @@ export default Controller.extend({
         },
         selectDate(moment) {
             this.set('collapsed', true);
-            this.transitionToRoute('chart', { queryParams: { date: moment.format().substring(0,10) }});
+            let chartType = this.get('type');
+            console.log(chartType);
+            this.transitionToRoute('chart', { queryParams: { date: moment.format().substring(0,10) , type: chartType}});
         },
         disableUnusedDays(moment) {
             this.set('center', moment);
