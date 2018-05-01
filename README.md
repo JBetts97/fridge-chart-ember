@@ -14,8 +14,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd fridgechart`
+* `git clone https://github.com/JBetts97/fridge-chart-ember` this repository
+* `cd fridge-chart-ember`
 * `npm install`
 
 ## Running / Development
