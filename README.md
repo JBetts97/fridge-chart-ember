@@ -9,6 +9,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
+* [Bower](https://bower.io/)
 * [Google Chrome](https://google.com/chrome/)
 * [Fridge Chart API](https://github.com/JBetts97/fridge-chart-api)
 
@@ -17,6 +18,7 @@ You will need the following things properly installed on your computer.
 * `git clone https://github.com/JBetts97/fridge-chart-ember` this repository
 * `cd fridge-chart-ember`
 * `npm install`
+* `bower install`
 
 ## Running / Development
 
