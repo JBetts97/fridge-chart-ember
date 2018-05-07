@@ -17,6 +17,7 @@ export default Controller.extend({
             moment('2018-04-14'),
             moment('2018-02-15')
         ]);
+        this.set('chartType', 'door');
     },
     actions: {
         toggleDatePicker() {
@@ -33,6 +34,9 @@ export default Controller.extend({
             console.log(moment);
             var usedDays = this.get('store').findAll('day');
             console.log(usedDays);
+        },
+        chartTypeToggled(choice) {
+            this.set('type', choice);
         }
     }
 });

@@ -1,8 +1,20 @@
 <div class="container">
     <h1>Dashboard</h1>
     {{#bs-button class="btn btn-info" onClick=(action "toggleDatePicker")}}
-        Date Picker
+        Choose Date
     {{/bs-button}}
+    {{#radio-button
+        value="door"
+        groupValue=chartType
+        changed="chartTypeToggled"}}
+        Door Chart
+    {{/radio-button}}
+    {{#radio-button
+        value="food"
+        groupValue=chartType
+        changed="chartTypeToggled"}}
+        Food Chart
+    {{/radio-button}}
     {{#bs-collapse collapsed=collapsed}}
         <div id="datepick" class="calendar-medium">
             {{#power-calendar
